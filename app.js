@@ -1,6 +1,10 @@
 var obj = {
     prop : "property ",
-    parse : function(){return parseInt("11", 2)}
+    parse : function(){return parseInt("11", 2)},
+    createObj : function createObj(name, type) {
+        this.name = name;
+        this.type = type;
+    }
 }
 
 var strObj = {
@@ -99,6 +103,13 @@ var app = function(){
     var valElem = document.createElement("p");
     valElem.innerText = val;
     divMain.appendChild(valElem);
+
+    // oggetti
+
+    var o1 = new main.obj.createObj("lulu", "cane");
+    console.log(o1);
+
+
 
 }
 
