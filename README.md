@@ -1,0 +1,1 @@
+# note introduttive di programmazione javascript
